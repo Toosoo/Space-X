@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@font-face {
+  font-family: "xyber";
+  src: url(./font/XYBER\ -\ Light.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image:url(./images/space-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c4ccd5;
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+max-width: 100%;
+
+}
+
+h4.logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.meteors {
+  position: absolute;
+  top: 50%;
+  right: 100vw;
+}
+
+.star {
+  position: absolute;
+   width: 1px; 
+  border-radius: 100%;
+  filter: blur(1px);
+  aspect-ratio: 1/1;
+  background: white;
+  box-shadow: 0 0 1px 1px white;
+  opacity: 1;
+}
+
+
+
+.main {
+  position: relative;
+  width: 98vw;
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 3;
+
+}
+
+
+.title {
+  font-family: "xyber";
+  font-size: clamp(60px,15vw,110px);
+ 
+}
+.text {
+  text-align: center;
+}
+.planet-details {
+  position: relative;
+  width: clamp(350px,50vw,660px);
+  min-height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.planet-details .planet {
+  max-width: 300px;
+}
+
+
+
+.planets-container {
+  width: 80vw;
+  height: 10%;
+  border-radius: 10px;
+  background: rgb(47 195 247 / 22%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  
+}
+.blackhole {
+  width: 40px;
+  background: black;
+  border-radius: 100%;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: -23px;
+  cursor: pointer;
+  animation: rotate 8s linear normal infinite;
+}
+.planet {
+  max-width: 60px;
+  cursor: pointer;
+}
+
+
+@keyframes rotate {
+  to{transform: rotate(360deg);}
+}
+
