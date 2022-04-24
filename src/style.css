@@ -70,10 +70,11 @@ h4.logo {
 
 .title {
   font-family: "xyber", "Syncopate", sans-serif;
-  font-size: clamp(60px, 15vw, 90px);
+  font-size: clamp(50px, 10vw, 80px);
 }
 .text {
   text-align: center;
+  margin-top: 20px;
 }
 .planet-details {
   position: relative;
@@ -121,7 +122,11 @@ h4.logo {
   width: clamp(30px, 10vw, 60px);
   cursor: pointer;
 }
-
+.planet:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
 .row-design .planets-container {
   width: 8vw;
   height: 90%;
