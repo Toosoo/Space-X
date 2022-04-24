@@ -70,7 +70,7 @@ h4.logo {
 
 .title {
   font-family: "xyber", "Syncopate", sans-serif;
-  font-size: clamp(50px, 10vw, 80px);
+  font-size: clamp(40px, 10vw, 90px);
 }
 .text {
   text-align: center;
