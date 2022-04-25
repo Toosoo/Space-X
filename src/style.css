@@ -115,6 +115,7 @@ h4.logo {
   right: 20px;
   top: -30px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .planet {
